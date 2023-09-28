@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.dev_140_4_authentication.controllers.TableDomainsController">
+    <children>
+        <TableView fx:id="table" maxWidth="Infinity" maxHeight="Infinity" VBox.vgrow="ALWAYS">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn fx:id="idCol" text="Id"/>
+                <TableColumn fx:id="webCol" text="Webname"/>
+                <TableColumn fx:id="domCol" text="Domainname"/>
+                <TableColumn fx:id="ipCol" text="Ip"/>
+                <TableColumn fx:id="dateCol" text="Datereg"/>
+                <TableColumn fx:id="countryCol" text="Countryreg"/>
+                <TableColumn fx:id="personIdCol" text="Person Id"/>
+            </columns>
+        </TableView>
+    </children>
+</VBox>
