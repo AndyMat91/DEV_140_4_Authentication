@@ -2,10 +2,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.dev_140_4_authentication.controllers.TableDomainsController">
     <children>
+        <Button text="Изменить CSS" onAction="#changeStyle" maxWidth="Infinity" maxHeight="-Infinity"/>
         <TableView fx:id="table" maxWidth="Infinity" maxHeight="Infinity" VBox.vgrow="ALWAYS">
             <columnResizePolicy>
                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>

@@ -1,6 +1,8 @@
 package com.example.dev_140_4_authentication.controllers;
 
+import com.example.dev_140_4_authentication.AuthenticationApp;
 import com.example.dev_140_4_authentication.models.Domain;
+import com.example.dev_140_4_authentication.stages.ClientsDomainsStage;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
@@ -31,9 +33,9 @@ public class TableDomainsController {
     private String css;
 
     @FXML
-    protected void mouseClick() {
-        String css1 = TableDomainsController.class.getResource("Style1.css").toExternalForm();
-        String css2 = TableDomainsController.class.getResource("Style2.css").toExternalForm();
+    public void changeStyle() {
+        String css1 = AuthenticationApp.class.getResource("Style1.css").toExternalForm();
+        String css2 = AuthenticationApp.class.getResource("Style2.css").toExternalForm();
         if(css!=null && css.equals(css1)){
             css = css2;
         }else {

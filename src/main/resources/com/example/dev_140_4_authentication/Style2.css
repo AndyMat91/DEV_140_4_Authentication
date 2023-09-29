@@ -1,0 +1,13 @@
+.table-view {
+    -fx-border-color: #ff7604;
+    -fx-font: 15 arial;
+}
+
+.cell {
+    -fx-text-fill: #835243;
+}
+
+.button {
+    -fx-background-color: #469856;
+    -fx-border-color: black;
+}

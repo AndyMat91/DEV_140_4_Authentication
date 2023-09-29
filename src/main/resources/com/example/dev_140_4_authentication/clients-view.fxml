@@ -8,7 +8,8 @@
       stylesheets="@Style1.css">
     <children>
         <TableView fx:id="table" maxWidth="Infinity" maxHeight="Infinity"
-                   VBox.vgrow="ALWAYS" onMouseClicked="#onMouseClicked" onKeyPressed="#onKeyPressed">
+                   VBox.vgrow="ALWAYS" onMouseClicked="#onMouseClicked" onKeyPressed="#onKeyPressed"
+                   stylesheets="@Style1.css">
             <columnResizePolicy>
                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
             </columnResizePolicy>

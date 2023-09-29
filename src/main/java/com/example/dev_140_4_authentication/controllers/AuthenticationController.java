@@ -50,7 +50,6 @@ public class AuthenticationController {
                     new ClientsStage().show();
                 } else {
                     result.setText("Неверный логин или пароль");
-                    result.setTextFill(Color.color(1, 0, 0));
                 }
             }
         } catch (SQLException | IOException ex) {

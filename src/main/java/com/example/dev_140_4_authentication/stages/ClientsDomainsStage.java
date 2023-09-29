@@ -31,6 +31,7 @@ public class ClientsDomainsStage {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setScene(SceneFactory.getDomainsScene());
         SceneFactory.getTableDomainsController().initTable(FXCollections.observableList(new ArrayList<>(new Repository().findAllClientsDomains(personDto.getId()))));
+        SceneFactory.getTableDomainsController().changeStyle();
         stage.showAndWait();
     }
 }
